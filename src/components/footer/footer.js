@@ -43,11 +43,11 @@ export default function Footer() {
           </Box> */}
           <Text sx={styles.footer.copyright}>
             <Image src={Whatsapp} alt="Logo" />
-            info@sitesa.ccom
+            info@sitesa.com.ar
           </Text>
           <Text sx={styles.footer.copyright}>
             <Image src={Contacto} alt="Logo" />
-            +54 011 4444-0000
+            +54 011 4919-2100
           </Text>
           <Text sx={styles.footer.copyright} style={{marginTop: "10px"}}>
             Copyright {new Date().getFullYear()} - Sitesa Srl - Limpieza Institucional
