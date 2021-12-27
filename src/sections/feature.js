@@ -1,61 +1,63 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
-import { Container, Grid } from 'theme-ui';
+import { Container, Grid, Text } from 'theme-ui';
 import SectionHeader from 'components/section-header';
 import FeatureCard from 'components/feature-card.js';
-import Performance from 'assets/feature/performance.svg';
-import Partnership from 'assets/feature/partnership.svg';
-import Subscription from 'assets/feature/subscription.svg';
-import Support from 'assets/feature/support.svg';
+import Almacen from 'assets/other/almacen.png';
+import Colegio from 'assets/other/colegio.png';
+import Fabrica from 'assets/other/fabrica.png';
+import Hospital from 'assets/other/hospital.png';
+import Oficina from 'assets/other/oficina.png';
+import Supermercado from 'assets/other/supermercado.png';
 
 const data = [
   {
     id: 1,
-    imgSrc: Performance,
+    imgSrc: Hospital,
     altText: 'Hospitales & Clínicas',
     title: 'Hospitales & Clínicas',
     text:
-      'Mantenemos la calidad de vida de nuestros pacientes y de nuestros hospitales. Insumos  Aprobados por Anmat',
+      'Mantenemos la calidad de vida de los pacientes y de nuestros hospitales. Insumos Aprobados por Anmat',
   },
   {
     id: 2,
-    imgSrc: Partnership,
+    imgSrc: Oficina,
     altText: 'Oficinas & Corporativos',
     title: 'Oficinas & Corporativos',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Una oficina limpia crea un ambiente de trabajo ideal y potencia la productividad.',
   },
   {
     id: 3,
-    imgSrc: Subscription,
+    imgSrc: Almacen,
     altText: 'Centros Logísticos',
     title: 'Centros Logísticos',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Ofrecemos limpieza de centros logísticos de maquinaria, suelos, y suministros higiénicos-sanitarios',
   },
   {
     id: 4,
-    imgSrc: Support,
+    imgSrc: Fabrica,
     altText: 'Plantas Industriales',
     title: 'Plantas Industriales',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'La hiegiene en espacios industriales necesita de una serie de procesos imprescindibles para asegurar los procesos productivos.',
   },
   {
     id: 5,
-    imgSrc: Partnership,
+    imgSrc: Supermercado,
     altText: 'Supermercados, Almacenes, y Locales',
     title: 'Supermercados, Almacenes, y Locales',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Higienizamos y desinfectamos tu lugar de trabajo según los protocolos correspondientes.',
   },
   {
     id: 6,
-    imgSrc: Support,
+    imgSrc: Colegio,
     altText: 'Esculeas',
     title: 'Esculeas',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Mantenemos espacios limpios e higienicos para el correccto desarrollo de actividades curriculares.',
   },
 ];
 
@@ -67,7 +69,7 @@ export default function Feature() {
           slogan="Soluciones de Limpieza, Mantenimiento y Reacondicionado"
           title="Resultados Visibles"
         />
-
+        <Text as="p" variant="heroSecondary" style={{marginBottom: "5%", textAlign:"center"}}>A través de nuestro servicio de logística, podemos operar en forma eficiente en todo el AMBA. Esta amplia presencia nos permite atender las necesidades de clientes con distintas sedes o sucursales.</Text>
         <Grid sx={styles.grid}>
           {data.map((item) => (
             <FeatureCard

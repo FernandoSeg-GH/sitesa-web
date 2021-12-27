@@ -4,19 +4,30 @@ import { Container, Box, Heading, Text, Image, Button } from 'theme-ui';
 import BannerImg from 'assets/sittesa1-2.png';
 import ShapeLeft from 'assets/shape-left.png';
 import ShapeRight from 'assets/shape-right.png';
+import { Link } from 'react-scroll';
 
 export default function Banner() {
   return (
     <section sx={styles.banner} id="home">
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
-          <Heading as="h1" variant="heroPrimary">
-            Dedicados A La Higiene Institucional
+          <Heading as="h1" variant="heroPrimary"  style={{width:"100%", fontSize:"48px"}}> 
+            Servicio de Limpieza Integral
           </Heading>
-          <Text as="p" variant="heroSecondary">
-            COVID-19: Reabre tu negocio de manera segura y eficiente.
+          <Text as="p" variant="heroSecondary" style={{width:"100%"}}>
+            {/* COVID-19: Reabre tu negocio de manera segura y eficiente. */}
+            SITESA SRL desde sus inicios allá por 1998, se distinguió con el empleo de la ultima tecnología disponibles para implementar en sus servicios, satisfaciendo de esta forma las necesidades más variadas.
           </Text>
-          <Button variant="primary">Explore</Button>
+          <Link
+            activeClass="active"
+            to="contacto"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >  
+            <Button variant="primary">Contacto</Button>
+          </Link>
         </Box>
 
         <Box sx={styles.banner.imageBox}>

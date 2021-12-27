@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Container, Box, Flex } from 'theme-ui';
+import { jsx, Container, Box, Flex,  Text } from 'theme-ui';
 import { keyframes } from '@emotion/core';
 import React, { useState } from 'react';
 import Carousel from 'react-multi-carousel';
@@ -12,9 +12,9 @@ const packages = {
   monthly: [
     {
       id: 1,
-      name: 'Free Plan',
-      description: 'For Small teams or office',
-      buttonText: 'Start free trail',
+      name: 'Asesoramiento',
+      description: ' Con una visita de un ejecutivo de nuestra empresa al lugar donde tengamos que implementar el servicio, le podremos dar una amplia idea de cómo hacer que el servicio se preste de manera eficiente, al menor costo posible. Cada cliente es único, por lo que le podremos ofrecer una solución personalizada a sus necesidades.',
+      buttonText: 'Conntáctenos para más información',
       priceWithUnit: '$0',
       points: [
         {
@@ -35,18 +35,12 @@ const packages = {
           text: 'Logistica',
           isAvailable: true,
         },
-        {
-          id: 4,
-          icon: <IoIosCloseCircle />,
-          text: 'Certifiación',
-          isAvailable: true,
-        },
       ],
     },
     {
       id: 2,
-      name: 'Business king',
-      description: 'For Enterprise business',
+      name: 'Puesta en Marcha',
+      description: 'El departamento de RRHH de la empresa seleccionará el mejor recurso humano que este a nuestro alcance. Una vez seleccionado se realizaran las entrevistas previas al ingreso, los exámenes médicos de ley, capacitación, presentación al supervisor y se le darán las indicaciones del alcance de su servicio.',
       priceWithUnit: '$15',
       buttonText: 'Create account',
       anotherOption: 'Or Start 14 Days trail',
@@ -69,20 +63,14 @@ const packages = {
           text: 'Logistica',
           isAvailable: true,
         },
-        {
-          id: 4,
-          icon: <IoIosCheckmarkCircle />,
-          text: 'Certifiación',
-          isAvailable: true,
-        },
       ],
     },
     {
       id: 3,
-      header: 'Suggested',
+      header: 'Servicio Integral',
       headerIcon: <IoIosCheckmarkCircle />,
-      name: 'Pro Master',
-      description: 'For pro level developers',
+      name: 'Operación y Control',
+      description: 'Nuestro equipo de supervisión posee vehículos propios y un esquema preestablecido de recorridos para verificar en los clientes el estado de servicio, corregir desviaciones y asegurar la calidad. Contamos con un personal capacitado para el desarrollo íntegro de la limpieza, siguiendo los estándares de la industria. ',
       priceWithUnit: '$24',
       buttonText: 'Create account',
       anotherOption: 'Or Start 14 Days trail',
@@ -103,12 +91,6 @@ const packages = {
           id: 3,
           icon: <IoIosCheckmarkCircle />,
           text: 'Logistica',
-          isAvailable: true,
-        },
-        {
-          id: 4,
-          icon: <IoIosCheckmarkCircle />,
-          text: 'Certifiación',
           isAvailable: true,
         },
       ],
@@ -138,12 +120,6 @@ const packages = {
           id: 3,
           icon: <IoIosCheckmarkCircle />,
           text: 'Logistica',
-          isAvailable: true,
-        },
-        {
-          id: 4,
-          icon: <IoIosCloseCircle />,
-          text: 'Certifiación',
           isAvailable: true,
         },
       ],
@@ -289,10 +265,10 @@ export default function Package() {
     <section id="pricing" sx={{ variant: 'section.pricing' }}>
       <Container>
         <SectionHeader
-          slogan="Planes?"
-          title="Bloques de servicios x projectos ($) ?"
+          slogan="Capacidad y Cálidad"
+          title="Trabajamos con empresas nacionales e intercionales."
         />
-        <Flex sx={styles.buttonGroup}>
+        {/* <Flex sx={styles.buttonGroup}>
           <Box sx={styles.buttonGroupInner}>
             <button
               className={state.active === 'monthly' ? 'active' : ''}
@@ -311,8 +287,11 @@ export default function Package() {
               Anual
             </button>
           </Box>
-        </Flex>
+        </Flex> */}
         <Box sx={styles.pricingWrapper} className="pricing__wrapper">
+          <Text as="p" variant="heroSecondary" style={{width:"100%", textAlign:"center"}}>
+            Poseemos con un eficaz sistema de logística para proveerle en tiempo y forma de todos los materiales, insumos y maquinaria de limpieza que se necesite además de un sistema de supervisión y comunicación para que Ud. Se desentienda de los temas relacionados a la higiene de su institución.
+          </Text>
           <Carousel {...sliderParams}>
             {state.pricingPlan.map((packageData) => (
               <Box
@@ -323,6 +302,9 @@ export default function Package() {
               </Box>
             ))}
           </Carousel>
+          <Text as="p" variant="heroSecondary" style={{width:"100%", textAlign:"center", marginTop:"3%"}}>
+          En cuanto al personal, el mismo se encuentra bajo nuestra exclusiva relación de dependencia. Nuestra empresa abona en tiempo y forma todas sus obliaciones como empleador como ser sueldos y aguinaldos, cargas sociales, Aseguradora de Riesgos del Trabajo (ART) estando inscriptos todo nuestro personal en las distintas dependencias que ley indica. Es costumbre en nuestra empresa que la gerencia administrativa envie copia de esta documentación a todos nuestros clientes para su tranquilidad.
+          </Text>
         </Box>
       </Container>
     </section>

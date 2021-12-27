@@ -15,6 +15,7 @@ import TeamSection from '../sections/team-section';
 import TestimonialCard from '../sections/testimonial';
 import BlogSection from '../sections/blog-section';
 import Subscribe from '../sections/subscribe';
+import Detalles from 'sections/detalles';
 
 export default function IndexPage() {
   return (
@@ -27,11 +28,13 @@ export default function IndexPage() {
           <Feature /> {/* --- Servicios --- */}
           <ServiceSection /> {/* --- Covid --- */}
           <Package /> {/* --- Planes --- */}
-          <TestimonialCard /> {/* --- Reseñas --- */}
-          <BlogSection /> {/* --- Blog --- */}
+          <Detalles /> {/* --- Detalles --- */}
           <Subscribe /> {/* --- Contacto --- */}
         </Layout>
       </StickyProvider>
     </ThemeProvider>
   );
 }
+
+// <TestimonialCard /> {/* --- Reseñas --- */}
+// <BlogSection /> {/* --- Blog --- */}

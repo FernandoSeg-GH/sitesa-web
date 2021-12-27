@@ -27,10 +27,10 @@ export default function PriceCard({
           <Text as="p">{description}</Text>
         </Box>
         <List items={points} childStyle={styles.listItem} />
-        <Text className="package__price" sx={styles.price}>
+        {/* <Text className="package__price" sx={styles.price}>
           {priceWithUnit}
           <span>/Mensual</span>
-        </Text>
+        </Text> */}
         {/* <Box sx={styles.buttonGroup}>
           <Button variant="primary" aria-label={buttonText}>
             {buttonText}

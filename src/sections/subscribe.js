@@ -72,7 +72,7 @@ export default function Subscribe() {
     handleSendGridResponse(res.status, text);
   };
   return (
-    <section>
+    <section id="contacto">
       <Container>
         <Box sx={styles.contentBox}>
           <Box sx={styles.contentBoxInner}>

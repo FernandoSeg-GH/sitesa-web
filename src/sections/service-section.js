@@ -18,16 +18,18 @@ import BannerImg from 'assets/sitesa1-1.png';
 import ServiceThumb from 'assets/service-thumb.png';
 import shapePattern from 'assets/shape-pattern1.png';
 
-import Smart from 'assets/services/smart.svg';
+import Limpieza from 'assets/other/limpieza.png';
+import Profesionales from 'assets/other/servicio-de-limpieza.png';
 import Secure from 'assets/services/secure.svg';
+import Smart from 'assets/services/smart.svg';
 
 const data = {
-  subTitle: 'Serivicios Especiales',
+  subTitle: 'Servicios Especiales',
   title: `Desinfeción Preventiva Covid-19`,
   features: [
     {
       id: 1,
-      imgSrc: Smart,
+      imgSrc: Limpieza,
       altText: 'Ambientes Limpios',
       title: 'Ambientes Limpios',
       text:
@@ -35,7 +37,7 @@ const data = {
     },
     {
       id: 2,
-      imgSrc: Secure,
+      imgSrc: Profesionales,
       altText: 'Prefesionales Capacitados',
       title: 'Prefesionales Capacitados',
       text:

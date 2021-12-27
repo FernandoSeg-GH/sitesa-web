@@ -32,15 +32,22 @@ export default function Header({ className }) {
               </Link>
             ))}
           </Flex>
-
-          <Button
+          <Link
+            activeClass="active"
+            to="contacto"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >  
+            <Button
             className="donate__btn"
             variant="secondary"
             aria-label="Get Started"
           >
             Contacto
           </Button>
-
+          </Link>
           <MobileDrawer />
         </Container>
       </header>
