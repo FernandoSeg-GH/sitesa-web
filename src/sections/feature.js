@@ -41,7 +41,7 @@ const data = [
     altText: 'Plantas Industriales',
     title: 'Plantas Industriales',
     text:
-      'La hiegiene en espacios industriales necesita de una serie de procesos imprescindibles para asegurar los procesos productivos.',
+      'La higiene en plantas industriales necesita de una serie de procesos imprescindibles para asegurar los procesos productivos.',
   },
   {
     id: 5,
@@ -54,8 +54,8 @@ const data = [
   {
     id: 6,
     imgSrc: Colegio,
-    altText: 'Esculeas',
-    title: 'Esculeas',
+    altText: 'Escuelas',
+    title: 'Escuelas',
     text:
       'Mantenemos espacios limpios e higienicos para el correccto desarrollo de actividades curriculares.',
   },

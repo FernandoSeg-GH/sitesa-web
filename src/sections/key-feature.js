@@ -52,8 +52,8 @@ const data = [
   {
     id: 6,
     imgSrc: Support,
-    altText: 'Esculeas',
-    title: 'Esculeas',
+    altText: 'Escuelas',
+    title: 'Escuelas',
     text:
       'Get your blood tests delivered at home collect a sample from the your blood tests.',
   },
