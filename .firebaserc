@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "<your_project_name>"
-  }
+    "default": "sitesa-web",
+    "sitesa": "sitesa-4dc11"
+  },
+  "targets": {}
 }

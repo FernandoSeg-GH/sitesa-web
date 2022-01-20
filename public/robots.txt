@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://startup-agency-modern.vercel.app
+Host: https://sitesa.vercel.app
 
 # Sitemaps
-Sitemap: https://startup-agency-modern.vercel.app/sitemap.xml
+Sitemap: https://sitesa.vercel.app/sitemap.xml

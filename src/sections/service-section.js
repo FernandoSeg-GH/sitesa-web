@@ -15,13 +15,10 @@ import TextFeature from 'components/text-feature';
 import ModalVideo from 'react-modal-video';
 import { IoIosPlay } from 'react-icons/io';
 import BannerImg from 'assets/sitesa1-1.png';
-import ServiceThumb from 'assets/service-thumb.png';
 import shapePattern from 'assets/shape-pattern1.png';
 
 import Limpieza from 'assets/other/limpieza.png';
 import Profesionales from 'assets/other/servicio-de-limpieza.png';
-import Secure from 'assets/services/secure.svg';
-import Smart from 'assets/services/smart.svg';
 
 const data = {
   subTitle: 'Servicios Especiales',
@@ -92,7 +89,7 @@ export default function ServiceSection() {
       <ModalVideo
         channel="youtube"
         isOpen={videoOpen}
-        videoId="ZNA9rmDsYVE"
+        videoId="G_HKphJuKc0"
         onClose={() => setVideoOpen(false)}
       />
     </section>
